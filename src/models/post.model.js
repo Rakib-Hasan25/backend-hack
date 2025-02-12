@@ -16,7 +16,7 @@ const postSchema = new mongoose.Schema({
       },
 
       video :{
-        type:string,
+        type:String,
 
       },
       crimeTime:{
@@ -32,6 +32,9 @@ const postSchema = new mongoose.Schema({
       },
       exactLocation:{
         type:String
+      },
+      anonymous:{
+        type:Boolean,
       },
       bannedPost :{
         type:Boolean,

@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import userRouter from "./routes/users.route.js"
+import postRouter from "./routes/post.route.js"
 // import videoRouter from "./routes/video.route.js"
 // import subcriptionRouter from "./routes/subscription.route.js"
 // import commentsRouter from "./routes/comment.route.js"
@@ -22,7 +23,7 @@ app.use(cookieParser())
            
 
 app.use("/api/v1/users",userRouter)
-// app.use("/api/v1/video",videoRouter)
+// app.use("/api/v1/posts",)
 // app.use("/api/v1/subcription",subcriptionRouter)
 // app.use("api/v1/comments",commentsRouter)
             

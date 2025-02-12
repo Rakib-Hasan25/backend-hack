@@ -31,7 +31,7 @@ router.route("/register").post(
     router.route("/otp-registration").post( otpandregistration)
     router.route("/updateName").patch(verifyJWT,updateName)
     router.route("/updateBio").patch(verifyJWT,updateBio)
-router.route("/get-current-user").get(verifyJWT,getCurrentUser)
+router.route("/get-current-user").get(getCurrentUser)
 router.route("/updateUserProfileImage")
 .patch(verifyJWT,
     upload.single("avatar")
